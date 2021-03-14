@@ -18,7 +18,7 @@ A collection of dotfiles, configurations for most typical linux apps with a 'uni
 - Since the dependencies are low, the theme is surprisingly independent of distro/DE - and can be used on any distro/DE you have in mind (the theme was built on the excellent EndeavourOS - my distro of choice)
 
 The result:
-![Screenshot](images-screenshots/screenshot-4d.png?raw=true "Screenshot")
+![Screenshot](images-screenshots/Screenshot-4d.png?raw=true "Screenshot")
 
 ### Disclaimers/Ownership ###
 - I'm not the creator of the Nord color scheme - more details, creator/owner here: https://www.nordtheme.com/
