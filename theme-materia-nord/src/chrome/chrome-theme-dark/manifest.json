@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "Materia-dark",
+  "version": "10",
+  "description": "",
+  "theme": {
+    "colors": {
+      "frame": [45, 45, 45],
+      "frame_inactive": [36, 36, 36],
+      "frame_incognito": [45, 45, 45],
+      "frame_incognito_inactive": [36, 36, 36],
+      "tab_background_text": [255, 255, 255, 0.6],
+      "tab_background_text_inactive": [255, 255, 255, 0.38],
+      "tab_background_text_incognito": [255, 255, 255, 0.6],
+      "tab_background_text_incognito_inactive": [255, 255, 255, 0.38],
+      "tab_text": [255, 255, 255, 0.87],
+      "toolbar": [52, 52, 52],
+      "toolbar_button_icon": [255, 255, 255, 0.6],
+      "omnibox_text": [255, 255, 255, 0.87],
+      "omnibox_background": [255, 255, 255, 0.05],
+      "bookmark_text": [255, 255, 255, 0.87],
+      "ntp_background": [36, 36, 36],
+      "ntp_text": [255, 255, 255, 0.87],
+      "button_background": [0, 0, 0, 0]
+    }
+  }
+}

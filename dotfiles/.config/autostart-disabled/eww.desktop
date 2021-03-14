@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Name=EWW Bar
+GenericName=EWW Bar for Workspaces
+Comment=EWW Bar for Workspaces
+Exec=sh -c "sleep 2; ~/.utils/eww-widgets/eww daemon; sleep 1; ~/.utils/eww-widgets/eww open pager"
+Terminal=false
+Type=Application
+Categories=Utility;
+StartupNotify=true
+Hidden=false
+X-GNOME-Autostart-enabled=true
+

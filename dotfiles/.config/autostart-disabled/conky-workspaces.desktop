@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Name=Conky Workspaces
+GenericName=Conky Workspaces
+Comment=Conky Workspaces indicator
+Exec=conky -d -c ~/.conky/conkyrc-workspaces.conf &
+Terminal=false
+Type=Application
+Categories=Utility;
+StartupNotify=true
+Hidden=false
+X-GNOME-Autostart-enabled=true
+

@@ -1,0 +1,25 @@
+* {
+  all: unset; //Unsets everything so you can style everything from scratch
+}
+
+//Global Styles
+window {
+  background-color: rgba(0, 0, 0, 0.0);
+  font-family: Agave;
+}
+
+button {
+  all: unset;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.5);
+  padding: 8px;
+}
+
+.icon_0_0, .icon_1_1, .icon_2_2, .icon_3_3, .icon_4_4, .icon_5_5 {
+  color: rgba(255, 255, 255, 1.0);
+}
+
+.pager button:hover {
+  color: #5e81ac;
+}

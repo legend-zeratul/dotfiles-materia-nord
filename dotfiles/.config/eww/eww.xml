@@ -1,0 +1,38 @@
+<!-- The main eww configuration file. This is where your widgets and how they appear on the screen and what they
+contain are defined. -->
+
+<eww>
+  <definitions>
+    <!-- This is the place where you structure your widgets, align them and stuff. -->
+
+    <def name="pager">
+        <box orientation="h" class="workspaces" space-evenly="true" halign="center"> <!-- Your workspaces.-->
+          <button class="icon_0_{{current_desktop}}" onclick="wmctrl -s 0"></button>
+          <button class="icon_1_{{current_desktop}}" onclick="wmctrl -s 1"></button>
+          <button class="icon_2_{{current_desktop}}" onclick="wmctrl -s 2"></button>
+          <button class="icon_3_{{current_desktop}}" onclick="wmctrl -s 3"></button>
+          <button class="icon_4_{{current_desktop}}" onclick="wmctrl -s 4"></button>
+          <button class="icon_5_{{current_desktop}}" onclick="wmctrl -s 5"></button>
+        </box>
+    </def>
+  </definitions>
+
+  <variables>
+
+	  <!-- Music vars -->
+    <!-- These are your variables. Like they say, they run a script, and then output that to the variable. In
+    the following var, we get music info from playerctl. -->
+
+    <script-var name="current_desktop" interval="1s">wmctrl -d | awk '{ if ($2 == "'*'") print $1}'</script-var>
+  </variables>
+
+  <windows>
+    <!-- These are the windows -->
+    <window name="pager" screen="0">
+      <geometry anchor="top center" width="270px" height="21px"/> <!--Specifies geometry-->
+      <widget>
+        <pager/> <!--This is the def we created earlier-->
+      </widget>
+    </window>
+  </windows>
+</eww>

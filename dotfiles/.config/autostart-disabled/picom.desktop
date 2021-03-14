@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name=Picom Compositor
+GenericName=Picom Compositor
+Comment=Picom Compositor
+Icon=background
+Exec=picom -b
+Terminal=false
+Type=Application
+
