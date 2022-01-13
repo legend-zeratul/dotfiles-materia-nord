@@ -48,13 +48,16 @@ The result:
   - Font Awesome (needed for the workspace indicator): https://use.fontawesome.com/releases/v5.15.2/fontawesome-free-5.15.2-desktop.zip
   (Install the above using either the package manager or by copying them to ```~/.fonts```)
 - Extract the contents of this repo to a local folder
-- Install the optipng, bc and sassc packages (```yay -S optipng bc sassc```) (needed for the next step)
-- Change to the theme-materia-nord folder, and run ```./change_color.sh -o Materia-Nordic theme-materia-nordic-2.conf``` to create/install the materia-nordic theme
 - Copy the contents of the dotfiles folder to your home directory - this should get you the needed color themes for the editors/terminals/GTK, and the conky/eww configs to the respective directories
 - Conky: the dials script needs Lua and Cairo: install lua5.4 first, followed by the conky-cairo (Arch) or conky-all (Debian/Ubuntu) packages
+- Extract built-theme-materia-nord/materia-nordic-theme-20210707.tar.gz to your user home - the .tar.gz contains the built materia nordic theme (adding this since inkscape seems to have an infinite-loop bug somewhere that prevents building the theme from source except on certain distros)
+
+#### (Optional) If building the theme from source ####
+- Install the optipng, bc and sassc packages (```yay -S optipng bc sassc```) (needed for the next step)
+- Change to the theme-materia-nord folder, and run ```./change_color.sh -o Materia-Nordic theme-materia-nordic-2.conf``` to create/install the materia-nordic theme
 
 ### Verify ###
-- The eww workspace indicator requires either a pre-built eww (following the instructions from: ) - or you can use the included eww binary (assuming that works for your machine/distro)
+- The eww workspace indicator requires either a pre-built eww (following the instructions from: https://elkowar.github.io/eww/main/) - or you can use the included eww binary (assuming that works for your machine/distro)
 - Run ```~/.config/.utils/eww-widgets/eww --help``` - to check if the built eww binary works on your machine.
 - Run ```conky -v``` to check that the Lua/Cairo bindings work fine. If you see the below output in the console, you should be good:
 
